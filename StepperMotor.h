@@ -21,6 +21,7 @@ public:
     void setStepDelay(unsigned long stepDelay);
     void setDirection(int direction);
     void setSpeed(long speed);
+    void setHomePosition(int homePosition);
     boolean driveSteps(int numberOfSteps);
     int getCurrentStep(void);
     boolean reset(void);
@@ -31,9 +32,10 @@ private:
     int EN_PIN;
     int DIR_PIN;
     int PUL_PIN;
-    unsigned long stepDelay;
     int currentStep;
     int direction;
+    int homePosition = 0;
+    unsigned long stepDelay;
 };
 
 #endif // _StepperMotor_H_
