@@ -14,8 +14,9 @@ StepperMotor	KEYWORD1
 
 setup	KEYWORD2
 setStepDelay	KEYWORD2
-setDirection	KEYWORD2
+setDirection    KEYWORD2
 setSpeed	KEYWORD2
+setHomePosition	KEYWORD2
 driveSteps	KEYWORD2
 getCurrentStep	KEYWORD2
 reset	KEYWORD2

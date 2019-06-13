@@ -69,11 +69,11 @@ boolean StepperMotor::driveSteps(int numberOfSteps)
 
     if (numberOfSteps > 0)
     {
-        StepperMotor::setDirection(COUNTERCLOCKWISE);
+        StepperMotor::setDirection(CLOCKWISE);
     }
     else if (numberOfSteps < 0)
     {
-        StepperMotor::setDirection(CLOCKWISE);
+        StepperMotor::setDirection(COUNTERCLOCKWISE);
     }
 
     while (this->currentStep != finalStep)
@@ -108,17 +108,13 @@ boolean StepperMotor::driveSteps(int numberOfSteps)
 */
 boolean StepperMotor::reset()
 {
-    int toZero = this->currentStep;
+    int resetPosition = this->currentStep + this->homePosition;
     if (this->currentStep > 0)
     {
-        StepperMotor::setDirection(COUNTERCLOCKWISE);
-        toZero *= -1;
+
+        resetPosition *= -1;
     }
-    else if (this->currentStep < 0)
-    {
-        StepperMotor::setDirection(CLOCKWISE);
-    }
-    boolean finished = StepperMotor::driveSteps(this->homePosition);
+    boolean finished = StepperMotor::driveSteps(resetPosition);
     return finished;
 }
 
