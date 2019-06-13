@@ -1,0 +1,27 @@
+#######################################
+# Syntax Coloring Map For StepperMotor Library
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+StepperMotor	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+setup	KEYWORD2
+setStepDelay	KEYWORD2
+setDirection	KEYWORD2
+setSpeed	KEYWORD2
+driveSteps	KEYWORD2
+getCurrentStep	KEYWORD2
+reset	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+CLOCKWISE	LITERAL1
+COUNTERCLOCKWISE	LITERAL1

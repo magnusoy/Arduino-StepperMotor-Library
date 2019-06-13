@@ -1,0 +1,19 @@
+{
+    "name": "Steppermotor controller",
+    "keywords": "Steppermotor,
+    "description": "Ease of use with steppermotor driver.",
+    "url": "https://github.com/magnusoy/Arduino-StepperMotor-Library",
+    "include": "StepperMotor",
+    "authors":
+    [
+      {
+        "name": "Magnus Kvendseth Øye"
+      }
+    ],
+    "repository":
+    {
+      "type": "git",
+      "url": "https://github.com/magnusoy/Arduino-StepperMotor-Library.git"
+    },
+    "frameworks": "arduino"
+  }
